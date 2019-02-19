@@ -25,7 +25,7 @@ pipeline {
   stages {
     stage("Builder") {
       steps {
-          sh """#!/bin/bash
+          sh '''#!/bin/bash
              rm -rf xml
              mkdir xml
              pushd xml
@@ -36,7 +36,7 @@ pipeline {
              popd
 
              python entitlement-tests/merge_polarion_xml_log.py xml/*
-             """
+             '''
       }
     }
 
