@@ -25,7 +25,8 @@ pipeline {
   stages {
     stage("Builder") {
       steps {
-          sh """rm -rf xml
+          sh """#!/bin/bash
+             rm -rf xml
              mkdir xml
              pushd xml
              xml_url_list="$XML_URL_1 $XML_URL_2 $XML_URL_3 $XML_URL_4 $XML_URL_5 $XML_URL_6 $XML_URL_7 $XML_URL_8 $XML_URL_9 $XML_URL_10 $XML_URL_11 $XML_URL_12 $XML_URL_13 $XML_URL_14 $XML_URL_15 $XML_URL_16 $XML_URL_17 $XML_URL_18"
