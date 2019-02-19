@@ -33,11 +33,11 @@ pipline {
              done
              popd
 
-             python entitlement-tests/CI/polarion/merge_polarion_xml_log.py xml/*
+             python entitlement-tests/merge_polarion_xml_log.py xml/*
              """
       }
     }
 
-
+  }
 
 }
