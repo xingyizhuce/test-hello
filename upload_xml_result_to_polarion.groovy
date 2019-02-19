@@ -1,4 +1,5 @@
 pipeline {
+  agent entitlement
   parameters {
     string( name: 'Test_Product', defaultValue: 'RHEL80', description: 'Optional. Fill in the test product like "RHEL80","RHEL76" which will be put into the polarion test run id. If this filed is empty, it will just use the test run id of the first merged xml.')
     string( name: 'XML_URL_1', defaultValue: '', description: '')
